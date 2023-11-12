@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+  <meta name="author" content="Vinith Venkatakrishnan">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="dark light"><title>Vinith's Portfolio Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">  
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f=satoshi@900,700,500,300,401,400&amp;display=swap">
+  <link rel="icon" href="./images/stack.svg" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./css/animate.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="../node_modules/quill/dist/quill.snow.css">
+
+  </head>
+
+<body>
+  
+<!-- //Header// -->
+
+  <div class="bg-light sticky-top">
+    <div class="container" >
+       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="#home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <span class="fs-4">Vinith Venkatakrishnan</span>
+          </a>
+          <ul class="nav nav-pills">
+             <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+             <li class="nav-item"><a href="#prof" class="nav-link">Skills</a></li>
+             <li class="nav-item"><a href="#work" class="nav-link">Experiences</a></li>
+             <li class="nav-item"><a href="#skills" class="nav-link">Technology</a></li>
+             <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+             <!-- <div class="content-wrapper d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+                   <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" stroke-width="5"/>
+                </svg>
+                <p>&nbsp&nbsp</p>
+                <div class="form-check form-switch">
+                   <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                   <label class="form-check-label" for="flexSwitchCheckChecked">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                         <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z " stroke-width="5"/>
+                      </svg>
+                   </label>
+                </div> -->
+             </div>
+          </ul>
+       </header>
+    </div>
+ </div>
+
+<div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+<!-- Heroes deck -->
+<div class="container col-xxl-8 px-4 pt-5 py-20"id="home" >
+  <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+     <div class="col-10 col-sm-8 col-lg-6 zoom1  ">
+        <img src="./images/ProfilePhotos/Vinith_headshot1.png" class="  animate__animated animate__pulse d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="350" loading="lazy">
+     </div>
+     <div class="col-lg-6">
+        <h1 class="animate__animated animate__lightSpeedInLeft display-5 fw-bold text-body-emphasis lh-1 mb-3">Hey, I'm Vinith</h1>
+        <div class="typewriter">
+           <h2 class="display-6 text-body-emphasis lh-1 mb-2">
+           Welcome to my Digital Portfolio </h5> 
+        </div>
+        <p class="lead">Ready to transform your digital supply chain? Look no further! <br> Let's connect and shape a more efficient future together.</p>
+        <div class="d-flex gap-2 mb-3 " >
+           <button type="button" class="btn btn-secondary">
+              <a  class = "a" href ="https://www.linkedin.com/in/vinithv/" target="_blank"  >
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.482 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.827 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.828 1.232-.828.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                 </svg>
+              </a>
+           </button>
+           <button type="button" class="btn btn-secondary">
+              <a  class = "a" href ="https://github.com/VinithVenkatakrishnan "target="_blank" >
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.82.82 2.33.66.07-.52.28-.82.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.82.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.82 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                 </svg>
+              </a>
+           </button>
+           <button type="button" class="btn btn-secondary">
+              <a  class = "a" href ="mailto:vinithv9@gmail.com" target="_blank"  >
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.382-4.708 2.825L15 11.105V5.382Zm-.034 6.826-5.64-3.471L8 9.582l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.382v5.722Z"/>
+                 </svg>
+              </a>
+           </button>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start margin-top">
+           <button type="button" class="btn btn-primary btn-lg px-2 me-md-2 py-2"><a  class = "a" href ="mailto:vinithv9@gmail.com" >Download CV </a>
+           </button>
+        </div>
+     </div>
+  </div>
+</div>
+<!-- About Me -->
+<div class="mb-5"> </div>
+<div class="px-4 py-3 my-2 text-center" id ="about" >
+  <!-- <img class="d-block mx-auto mb-4" src="./images/ProfilePhotos/AboutMe.png" alt="" width="150" height="150"> -->
+  <h3 class="display-6 fw-semibold text-body-emphasis">About Me</h3>
+  <div class="col-lg-8 mx-auto">
+    <p class="lead mb-4">In the dynamic world of supply chains, I bring more than just expertise. I bring a passion for untangling complexities and a knack for turning raw data into actionable insights. Ready to transform challenges into triumphs? Let's make it happen!</p>
+    
+    <section class="text-center">
+      <div class="row">
+        <div class=" col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative animate__animated animate__slideInUp">
+
+          <h2 class="zoom text-primary fw-bold mb-3">8+</h2>
+          <h5 class="zoom fw-normal mb-0">Experience</h5>
+          <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+        </div>
+    
+        <div class="  col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative animate__animated animate__slideInUp">
+    
+          <h2 class="zoom text-primary fw-bold mb-3">37</h2>
+          <h5 class="zoom fw-normal mb-0">Optimisation Projects</h5>
+          <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+        </div>
+    
+        <div class=" col-lg-3 col-md-6 mb-5 mb-md-0 position-relative animate__animated animate__slideInUp">
+        
+          <h2 class="zoom text-primary fw-bold mb-3"> ~ 800k $</h2>
+          <h5 class="zoom fw-normal mb-0">Cost Savings</h5>
+          <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+        </div>
+    
+        <div class=" col-lg-3 col-md-6 mb-5 mb-md-0 position-relative animate__animated animate__slideInUp">
+
+          <h2 class="zoom text-primary fw-bold mb-3">6000+</h2>
+          <h5 class="zoom fw-normal mb-0">Man Hours Savings</h5>
+        </div>
+      </div>
+    </section>
+
+    </div>
+  </div>
+
+    
+  <div class="mb-5"> </div>
+  <div class="mb-5"> </div>
+
+<!-- Education -->
+<div  id="education">
+  <div class="container py-3  gradient-bottom-right rounded-3  text-center scroll-animation animate__animated" id="animatedElement">
+     <h3 class=" pb-2 text-center display-6 1h-1 text-body-emphasis border-bottom">Education</h3>
+     <div class="row py-3 justify-content-around rounded-3">
+        <div class="zoom2 col-xl-6 col-sm-12 py-2">
+           <div class="card shadow-soft-2 h-md-100 box ">
+              <div class ="hstack ">
+                 <img src="./images/Schools/PG.jpg" style ="height: 150px;" class="img-fluid px-1">
+                 <div class="card-body d-flex flex-column p-1">
+                    <div class="step-content">
+                       <h5>Master of Digital Innovation</h5>
+                       <h6 class="mb-0"><span class="fw-semibold">Dalhousie University</span></h6>
+                       <span class="step-icon step-icon-soft-dark">
+                          <p class="mb-0">
+                             <span class="fw-semibold text-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                   <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                             </span>
+                             Canada
+                          </p>
+                          <span class="step-title" style="font-size: small;">Sep 2023 - Dec 2024</span>
+                       </span>
+                       <div class="mb-0">
+                          <p class="mb-1"><span class="fw-semibold">Specialization:</span> Digital Transformation and Data Science</p>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="zoom2 col-xl-6 col-sm-12 py-2">
+           <div class="card shadow-soft-2 h-md-100 box">
+              <div class ="hstack ">
+                 <img src="./images/Schools/UG.jpg" style ="height: 150px;" class="img-fluid px-1">
+                 <div class="card-body d-flex flex-column p-1">
+                    <div class="step-content">
+                       <h5>Bachelor of Technology</h5>
+                       <h6 class="mb-0"><span class="fw-semibold">Sastra University</span></h6>
+                       <p class="mb-0">
+                          <span class="fw-semibold text-danger">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                             </svg>
+                          </span>
+                          India
+                       </p>
+                       <span class="step-icon step-icon-soft-dark">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                             <!-- Calendar icon path -->
+                          </svg>
+                          <span class="step-title " style="font-size: small;">Jun 2011 - May 2015</span>
+                       </span>
+                       <div class="mb-0">
+                          <p class="mb-1"><span class="fw-semibold">Specialization:</span> Mechanical Engineering and Operations Research</p>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+<div class="mb-5"> </div>
+<div class="mb-5"> </div>
+
+<!-- Services -->
+<div class="container py-3  gradient-bottom-right rounded-3 scroll-animation animate__animated" id="animatedElement1">
+  <h3 class="py-1 pb-2 text-center display-6 lh-1  text-body-emphasis border-bottom" id="prof" style="color: aliceblue;">Expertise</h3>
+  <div class="text-center">
+     <div class="container py-3 ">
+        <div class="row row-cols-10">
+           <div class="zoom1 col-md-3 col-xl-3 col-sm-3 py-2 ">
+              <div class="swiper-slide h-auto swiper-slide-active" role="group" aria-label="1 / 4">
+                 <div class="card h-100 box  animate__animated animate__fadeIn">
+                    <div class="card-body my-md-2 my-2 py-xl-2 py-md-0 py-sm-2 text-center">
+                       <span class="text-primary  d-block mb-3 mx-auto">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-database" viewBox="0 0 16 16">
+                             <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z"></path>
+                          </svg>
+                       </span>
+                       <h3 class="h5 mb-3">Data Modelling</h3>
+                       <p class="mb-0">Streamlines insights, enhances efficiency, and informs decision-making in industries</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="zoom1 col-md-3 col-xl-3 col-sm-3 py-2">
+              <div class="swiper-slide h-auto swiper-slide-active" role="group" aria-label="1 / 4">
+                 <div class="card h-100 box  animate__animated animate__fadeIn">
+                    <div class="card-body my-md-2 my-2 py-xl-2 py-md-0 py-sm-2 text-center">
+                       <span class="text-primary  d-block mb-3 mx-auto">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                             <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"></path>
+                          </svg>
+                       </span>
+                       <h3 class="h5 mb-3">Data Visualization</h3>
+                       <p class="mb-0">Transforms complex information into clear, visual representations for better understanding</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="zoom1 col-md-3 col-xl-3 col-sm-3 py-2">
+              <div class="swiper-slide h-auto swiper-slide-active" role="group" aria-label="1 / 4">
+                 <div class="card h-100 box  animate__animated animate__fadeIn">
+                    <div class="card-body my-md-2 my-2 py-xl-2 py-md-0 py-sm-2 text-center">
+                       <span class="text-primary  d-block mb-3 mx-auto">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16">
+                             <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362.798-.799.96-1.932.362-2.531-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532Z"></path>
+                             <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9.42 9.42 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a9.556 9.556 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093.067.017.12.033.16.045.184.06.279.13.351.295l.029.073a3.475 3.475 0 0 1 .157.721c.055.485.051 1.178-.159 2.065Zm-4.828 7.475.04-.04-.107 1.081a1.536 1.536 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a8.548 8.548 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006ZM5.205 5c-.625.626-.94 1.351-1.004 2.09a8.497 8.497 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107-.04.039Zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a2.835 2.835 0 0 0-.045-.283 3.078 3.078 0 0 0-.3-.041Z"></path>
+                             <path d="M7.009 12.139a7.632 7.632 0 0 1-1.804-1.352A7.568 7.568 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"></path>
+                          </svg>
+                       </span>
+                       <h3 class="h5 mb-3">Automation</h3>
+                       <p class="mb-0">Accelerates tasks, reducing manual effort and boosting productivity across various processes</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="zoom1 col-md-3 col-xl-3 col-sm-3 py-2">
+              <div class="swiper-slide h-auto swiper-slide-active" role="group" aria-label="1 / 4">
+                 <div class="card h-100 box  animate__animated animate__fadeIn">
+                    <div class="card-body my-md-2 my-2 py-xl-2 py-md-0 py-sm-2 text-center">
+                       <span class="text-primary  d-block mb-3 mx-auto">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
+                             <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"></path>
+                             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                          </svg>
+                       </span>
+                       <h3 class="h5 mb-3">Project Management</h3>
+                       <p class="mb-0">Ensures organized planning, execution, and control of tasks for success.</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+<div class="mb-5"> </div>
+<div class="mb-5"> </div>
+<!-- <Use Cases -->
+  <div class="container py-3 gradient-bottom-right scroll-animation animate__animated" id="animatedElement2">
+    <h3 class="pb-2 text-center display-6 lh-1 text-body-emphasis border-bottom" id="Skills">Use Cases</h3>
+    <div class="container py-3 rounded-3 box">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <!-- Add more indicators for additional slides -->
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner  py-3 px-2">
+             <!-- First Slide -->
+             <div class="carousel-item active " data-bs-interval="10000">
+                <!-- .. -->
+                <div class="row featurette">
+                   <div class=" col-md-8 ">
+                      <h3 class="featurette-heading fw-normal lh-1">Visual Analytics</h3>
+                      <h4 class="featurette-heading fw-normal lh-1 text-body-secondary">Objectives Key Results</h4>
+                      <p class="text-body-secondary">The integration of visual analytics tools like <Span class="fw-semibold"> Domo, Power BI, ETL, and Excel VBA </Span> in supply chain management enhances data-driven decision-making, aligns with organizational objectives, and fosters a more agile and responsive supply chain. This, in turn, helps in achieving and exceeding OKRs while ensuring that KPIs are actively monitored and managed</p>
+                      <ul class="list-group list-group-flush">
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Real-Time Dashboards
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Interactive Reports
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Performance Monitoring
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Feedback Loop
+                         </li>
+                      </ul>
+                   </div>
+                   <div class="col-md-4">
+                      <img src="./images/usecases/1.JPG" class="card box bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto  style="width="500" height="500">
+                   </div>
+                </div>
+                <!-- .. -->
+             </div>
+             <!-- Second Slide -->
+             <div class="carousel-item" data-bs-interval="2000">
+                <!-- .. -->
+                <div class="row featurette">
+                   <div class="col-md-8 order-md-2">
+                      <h3 class="featurette-heading fw-normal lh-1">Channel Data Management</h3>
+                      <h4 class="featurette-heading fw-normal lh-1 text-body-secondary">Downstream Visibility</h4>
+                      <p class="text-body-secondary">Downstream visibility in supply chain management refers to the ability to <Span class="fw-semibold">track and monitor the flow of goods and information as they move from the manufacturer to the end customer.</Span> This involves gaining insights into the various stages of the supply chain that occur after the production phase, including distribution, transportation, and retail</p>
+                      <ul class="list-group list-group-flush">
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Order Fulfillment
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Demand Forecasting
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Inventory Management
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            SAP MDG and E2OPEN Integration
+                         </li>
+                      </ul>
+                   </div>
+                   <div class="col-md-4 order-md-1">
+                      <img src="./images/usecases/3.JPG" class="card box bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto style="width="500" height="500">
+                   </div>
+                </div>
+                <!-- .. -->
+             </div>
+             <!-- Third Slide -->
+             <div class="carousel-item">
+                <!-- .. -->
+                <div class="row featurette">
+                   <div class="col-md-8">
+                      <h3 class="featurette-heading fw-normal lh-1">Demand Sensing and Planning</h3>
+                      <h4 class="featurette-heading fw-normal lh-1 text-body-secondary">Sales Inventory and Operations Planning</h4>
+                      <p class="text-body-secondary">In pursuit of optimizing supply chain operations, I successfully integrated Sales Inventory Operations Planning <Span class="fw-semibold">(SIOP), Microsoft Excel, and SAP ERP into a cohesive strategy that aligns with the principles of a digital supply chain.</Span> This amalgamation of tools and technologies aimed to enhance visibility, streamline processes, and improve decision-making throughout the supply chain lifecycle</p>
+                      <ul class="list-group list-group-flush">
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Sales Inventory Operations Planning (SIOP) Implementation
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Microsoft Excel for Data Analysis and Reporting
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            SAP ERP Integration
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Automation and Optimization
+                         </li>
+                      </ul>
+                   </div>
+                   <div class="col-md-4">
+                      <img src="./images/usecases/4.JPG" class="card box bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto style="width="500" height="500">
+                   </div>
+                </div>
+                <!-- .. -->
+             </div>
+             <!-- Fourth Slide -->
+             <div class="carousel-item">
+                <!-- .. -->
+                <div class="row featurette">
+                   <div class="col-md-8 order-md-2">
+                      <h3 class="featurette-heading fw-normal lh-1">Collaborative Planning</h3>
+                      <h4 class="featurette-heading fw-normal lh-1 text-body-secondary">Resource Optimisation</h4>
+                      <p class="text-body-secondary">
+                         Regularly monitoring and analyzing these inventory management KPIs can provide valuable insights into the <Span class="fw-semibold">efficiency and effectiveness of inventory processes, helping companies make informed decisions </Span> to optimize inventory levels and improve overall business performance
+                      </p>
+                      <ul class="list-group list-group-flush">
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Inventory Turnover Ratio
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Stockout Rate
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Carrying Cost of Inventory
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Supplier On-Time Delivery Performance
+                         </li>
+                      </ul>
+                   </div>
+                   <div class="col-md-4 order-md-1">
+                      <img src="./images/usecases/5.JPG" class="card box bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto style="width="500" height="500">
+                   </div>
+                </div>
+                <!-- .. -->
+             </div>
+             <!-- Fifth Slide -->
+             <div class="carousel-item">
+                <!-- .. -->
+                <div class="row featurette">
+                   <div class="col-md-8">
+                      <h3 class="featurette-heading fw-normal lh-1">Risk Assessment and Mitigation</h3>
+                      <h4 class="featurette-heading fw-normal lh-1 text-body-secondary">Technology Integration</h4>
+                      <p class="text-body-secondary">By combining the strengths of <Span class="fw-semibold">Lucidchart and Smartsheet, your commodity management and sourcing team can benefit from a powerful collaboration and project management ecosystem.</Span> This integrated approach provides both the detailed planning capabilities of Smartsheet and the visual clarity of Lucidchart, ultimately enhancing the execution of supply chain projects</p>
+                      <ul class="list-group list-group-flush">
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Use Smartsheet for Task Management
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Track and Analyze Progress
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Reporting and Analytics
+                         </li>
+                         <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="green"/>
+                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            Integrate with Other Tools
+                         </li>
+                      </ul>
+                   </div>
+                   <div class="col-md-4">
+                      <img src="./images/usecases/2.JPG" class="card box bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto style="width="500" height="500">
+                   </div>
+                </div>
+                <!-- .. -->
+             </div>
+          </div>
+          <!-- Carousel Navigation Buttons -->
+       </div>
+    </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button> -->
+ </div>
+ </div>
+ <div class="mb-5"> </div>
+ <div class="mb-5"> </div>
+<!-- Technology Stack -->
+<div id="skills">
+<div class="container py-3  gradient-bottom-right rounded-3 scroll-animation animate__animated" id="animatedElement3">
+  <h3 class="py-3 pb-2 text-center display-6 lh-1  text-body-emphasis border-bottom" >Technology Stack</h3>
+  <div class="container px-4 py-3 text-center">
+     <div class="container">
+        <div class="row row-cols-10">
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/BI.jpg"  style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/DOMO.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/o365.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/smartsheet.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/Lucidchart.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/GoogleSpace.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/python.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/SQL.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/html.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/looker.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/SAP.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/Jupyter.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/VBA.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/JIRA.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/GA.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/VS.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/R.jpg" style="width: 98px;"></div>
+           <div class="col box1 animate__animated animate__fadeIn animate__pulse"><img src ="./images/Skills/e2.jpg" style="width: 98px;"></div>
+        </div>
+     </div>
+  </div>
+</div>
+</div>
+<div class="mb-5"> </div>
+<div class="mb-5"> </div>
+<!-- Experiences -->
+<div class="container py-3  gradient-bottom-right rounded-3 scroll-animation animate__animated" id="animatedElement4">
+  <h3 class="py-3 pb-2 text-center display-6 lh-1  text-body-emphasis border-bottom " id="work">Work Experience</h3>
+  <div class="container align-items-center py-3">
+     <!-- Right Column -->
+     <div class="col">
+        <div class="row gx-1 justify-content-evenly  text-cente element" id="hoverElement">
+           <!-- Card 1 (similar structure) -->
+           <div class="zoom col-md-2 col-xl-2 py-2 animate__animated animate__fadeIn animate__pulse">
+              <div class="card shadow-soft-2 h-md-100 box">
+                 <div class="card-body d-flex flex-column p-2">
+                    <div class="text-center">
+                       <img src="images/Company/TNL.jpg" class="img-fluid img-1" alt="Company Logo">
+                    </div>
+                    <p class="mb-0 text-center">
+                       <span class="fw-semibold text-danger">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg>
+                       </span>
+                       Canada
+                    </p>
+                    <h6 class="fw-semibold mb-0 text-center">Senior Data Analyst</h6>
+                    <p class="text-center" style="font-size: small;"> Aug 2022 – Present</p>
+                 </div>
+              </div>
+           </div>
+           <!-- Card 2 (similar structure) -->
+           <div class="zoom col-md-2 col-xl-2 py-2 animate__animated animate__fadeIn animate__pulse">
+              <div class="card shadow-soft-2 h-md-100 box">
+                 <div class="card-body d-flex flex-column p-2">
+                    <div class="text-center">
+                       <img src="images/Company/CG.jpg" class="img-fluid img-1" alt="Company Logo">
+                    </div>
+                    <p class="mb-0 text-center">
+                       <span class="fw-semibold text-danger">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg>
+                       </span>
+                       India
+                    </p>
+                    <h6 class="fw-semibold mb-0 text-center">Team Lead</h6>
+                    <p class="text-center" style="font-size: small;"> Jun 2021 – Aug 2022</p>
+                 </div>
+              </div>
+           </div>
+           <!-- Card 3 (similar structure) -->
+           <div class="zoom col-md-2 col-xl-2 py-2 animate__animated animate__fadeIn animate__pulse">
+              <div class="card shadow-soft-2 h-md-100 box">
+                 <div class="card-body d-flex flex-column p-2">
+                    <div class="text-center">
+                       <img src="images/Company/GF.jpg" class="img-fluid img-1" alt="Company Logo">
+                    </div>
+                    <p class="mb-0 text-center">
+                       <span class="fw-semibold text-danger">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg>
+                       </span>
+                       India
+                    </p>
+                    <h6 class="fw-semibold mb-0 text-center">Supply Chain Specialist</h6>
+                    <p class="text-center" style="font-size: small;"> Mar 2018 – Jun 2021</p>
+                 </div>
+              </div>
+           </div>
+           <!-- Card 4 (similar structure) -->
+           <div class="zoom col-md-2 col-xl-2 py-2 animate__animated animate__fadeIn animate__pulse">
+              <div class="card shadow-soft-2 h-md-100 box">
+                 <div class="card-body d-flex flex-column p-2">
+                    <div class="text-center">
+                       <img src="images/Company/FS.jpg" class="img-fluid img-1" alt="Company Logo">
+                    </div>
+                    <p class="mb-0 text-center">
+                       <span class="fw-semibold text-danger">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg>
+                       </span>
+                       India
+                    </p>
+                    <h6 class="fw-semibold mb-0 text-center">Planning Engineer</h6>
+                    <p class="text-center" style="font-size: small;"> Mar 2018 – Jun 2021</p>
+                 </div>
+              </div>
+           </div>
+           <div class="zoom col-md-2 col-xl-2 py-2 animate__animated animate__fadeIn animate__pulse">
+              <div class="card shadow-soft-2 h-md-100 box">
+                 <div class="card-body d-flex flex-column p-2 ">
+                    <div class="text-center">
+                       <img src="images/Company/TCS.jpg" class="img-fluid img-1" alt="Company Logo">
+                    </div>
+                    <p class="mb-0 text-center">
+                       <span class="fw-semibold text-danger">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg>
+                       </span>
+                       India
+                    </p>
+                    <h6 class="fw-semibold mb-0 text-center">System Engineer</h6>
+                    <p class="text-center" style="font-size: small;"> May 2015 – Nov 2015</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  </div>
+  <div class="mb-5"> </div>
+  <div class="mb-5"> </div>
+  <!-- Testimonial -->
+  <div class="container px-4 py-3 gradient-bottom-right rounded-3 scroll-animation animate__animated" id="animatedElement5" >
+     <div class="px-4 py-2 my-2 "id ="testimonials">
+        <h3 class="py-3 pb-2 text-center display-6 lh-1  text-body-emphasis border-bottom " id="testimonials">Testimonials</h3>
+        <!-- <img class="bd-placeholder-img" src= "./images/Testimonials/Testimonial3.png" width="100%" height="100%">  -->
+        <div class="row">
+           <div class="col-12 col-lg-8 col-md-8 col-sm-8 mx-auto">
+              <div id="carouselExampleDark1" class="carousel carousel-dark slide box1 my-4" data-bs-ride="carousel">
+                 <div class="carousel-inner">
+                    <div class="carousel-item active  " data-bs-interval="2000">
+                       <!-- Set interval to 5000 milliseconds (5 seconds) -->
+                       <img src="./images/Testimonials/Testimonial1.png" class="bd-placeholder-img " alt="Slide 1">
+                    </div>
+                    <div class="carousel-item  " data-bs-interval="2000">
+                       <img src="./images/Testimonials/Testimonial2.png" class="bd-placeholder-img" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item  " data-bs-interval="2000">
+                       <img src="./images/Testimonials/Testimonial3.png" class="bd-placeholder-img" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item  " data-bs-interval="2000">
+                       <img src="./images/Testimonials/Testimonial4.png" class="bd-placeholder-img" alt="Slide 4">
+                    </div>
+                    <div class="carousel-item  " data-bs-interval="2000">
+                       <img src="./images/Testimonials/Testimonial5.png" class="bd-placeholder-img" alt="Slide 5">
+                    </div>
+                 </div>
+                 <!-- <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    
+                    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div> -->
+                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+                 </button>
+                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+                 </button>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div class="mb-5"> </div>
+  <div class="mb-5"> </div>
+
+<!-- Footer -->
+<div class=" py-5 text-center">
+  <div class="container">
+     <footer class=" py-3 my-4 border-top">
+        <div>
+           <p> © 2023 Vinith Venkatakrishnan</p>
+     </footer>
+     </div>
+  </div>
+</div>
+<script src="./js/index.js"></script>
+</body>
+</html>
+
+
